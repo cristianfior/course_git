@@ -7,3 +7,4 @@
 - git config --local core.editor "editor": define the default editor to the files of the project
 - git config --local alias.aliasname gitcommand: create an alias for a git command
 - git status: see the status of the project and its files
+- git add <filename or param>: stage the files (its possible to add a specific filename or add all by using the param: . or --all or -A)
