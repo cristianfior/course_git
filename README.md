@@ -26,4 +26,5 @@
 - git branch branchname: creates a new branch
 - :question:git checkout *param* branchname: change between branches. **Params**: *-b* creates and checkout automatically to a new branch | *-* switches back to the previous branch | *-d* deletes the branch
 - git branch --set-upstream-to=origin/main branch: set the branch to pull the changes from main
+- git merge branchname: the current branch will inherit all features from the branch passed in the command
 ---
