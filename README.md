@@ -11,5 +11,8 @@
 - git commit -m "message": creates a local snapshot of the staged files
 - git commit -am "message": stage and creates a snapshot, if you already made the first commit of the file
 - git remote add origin *LinkToRemoteRepository*: link the local repository to the remote one
-- git push -u origin main: in the very first push, is necessary to track the repository principal branch
+- git push -u origin main: in the very first push, is necessary to track to where changes goes and from where it comes
 - git push origin *branchname*: pushes the commits to remote repository
+- git pull: pull changes from the remote repository
+
+- git clone *LinkToRemoteRepositorySSH*: creates a clone of an existing repository
