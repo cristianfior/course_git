@@ -1,6 +1,7 @@
 ## README please!
 *This is a cheatsheet I've made to learn and remember git commands*
 - git init: initialize the git repository on the specified archive
+- git clone *LinkToRemoteRepositorySSH*: creates a clone of an existing repository
 - git config --local help.autocorrect 1: authorize git to correct commands when it's misswrited
 - git config --local user.name "username": define collaborator username
 - git config --local user.email "useremail": define collaborator useremail
@@ -21,5 +22,8 @@
 - :question:git log *param*: see a timeline of the commits. **Params**: *--decorate*, give back info about the branch | *--author="name"*, filter the log by author | *--oneline*, show only a part of commit hash and its name | *--all*, show the log including all existing branches | *--graph*, show a graph with a tree of merges and rebases | *--pretty=oneline*, show the complete commit hash and its name | *--since='month day year'*, return commits after the date excluding the set day | *--until='month day year'*, return commits before the date excluding the set day
 - :question:git shortlog *param*: a simplified log that return the authors, its commits quantity and names. **Params**: *-sn*, simplify even more and return only the commits quantity and author username
 - git reflog: return a log with commits references
+- git branch: list all existing local branches
+- git branch branchname: creates a new branch
+- :question:git checkout *param* branchname: change between branches. **Params**: *-b* creates and checkout automatically to a new branch | *-* switches back to the previous branch | *-d* deletes the branch
+- git branch --set-upstream-to=origin/main branch: set the branch to pull the changes from main
 ---
-- git clone *LinkToRemoteRepositorySSH*: creates a clone of an existing repository
