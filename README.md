@@ -8,11 +8,12 @@
 - git config --local alias.aliasname gitcommand: create an alias for a git command
 - git status: see the status of the project and its files
 - git add *filename or param*: stage the files (its possible to add a specific filename or add all by using the param: *.* or *--all* or *-A*)
+- git rm *filename*: remove a file from the project
 - git commit -m "message": creates a local snapshot of the staged files
 - git commit -am "message": stage and creates a snapshot, if you already made the first commit of the file
 - git remote add origin *LinkToRemoteRepository*: link the local repository to the remote one
 - git push -u origin main: in the very first push, is necessary to track to where changes goes and from where it comes
 - git push origin *branchname*: pushes the commits to remote repository
 - git pull: pull changes from the remote repository
-
+---
 - git clone *LinkToRemoteRepositorySSH*: creates a clone of an existing repository
