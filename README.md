@@ -7,18 +7,19 @@
 - git config --local core.editor "editor": define the default editor to the files of the project
 - git config --local alias.aliasname gitcommand: create an alias for a git command
 - git status: see the status of the project and its files
-- git add :exclamation:*filename or param*: stage the files (it's possible to add a specific filename or add all by using the param: *.* or *--all* or *-A*)
+- :exclamation:git add *filename or param*: stage the files (it's possible to add a specific filename or add all by using the param: *.* or *--all* or *-A*)
 - git mv *path/oldfilename* *path/newfilename*: renames a file
 - git mv *oldpath/filename* *newpath/filename*: moves a file to another folder
-- git rm :exclamation:*filename*: remove a file from the project
+- :exclamation:git rm *filename*: remove a file from the project
+- git checkout *filename*: reset a modified file if not staged
 - git commit -m "message": creates a local snapshot of the staged files
 - git commit -am "message": stage and creates a snapshot, if you already made the first commit of the file
 - git remote add origin :exclamation:*LinkToRemoteRepository*: link the local repository to the remote one
 - git push -u origin main: in the very first push, is necessary to track to where changes goes and from where it comes
-- git push origin :exclamation:*branchname*: pushes the commits to remote repository
+- :exclamation:git push origin *branchname*: pushes the commits to remote repository
 - git pull: pull changes from the remote repository
 - :question:git log *param*: see a timeline of the commits. **Params**: *--decorate*, give back info about the branch | *--author="name"*, filter the log by author | *--oneline*, show only a part of commit hash and its name | *--all*, show the log including all existing branches | *--graph*, show a graph with a tree of merges and rebases | *--pretty=oneline*, show the complete commit hash and its name | *--since='month day year'*, return commits after the date excluding the set day | *--until='month day year'*, return commits before the date excluding the set day
 - :question:git shortlog *param*: a simplified log that return the authors, its commits quantity and names. **Params**: *-sn*, simplify even more and return only the commits quantity and author username
 - git reflog: return a log with commits references
 ---
-- git clone :exclamation:*LinkToRemoteRepositorySSH*: creates a clone of an existing repository
+- :exclamation:git clone *LinkToRemoteRepositorySSH*: creates a clone of an existing repository
