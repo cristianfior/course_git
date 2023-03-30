@@ -7,16 +7,16 @@
 - git config --local core.editor "editor": define the default editor to the files of the project
 - git config --local alias.aliasname gitcommand: create an alias for a git command
 - git status: see the status of the project and its files
-- git add *filename or param*:exclamation:: stage the files (it's possible to add a specific filename or add all by using the param: *.* or *--all* or *-A*)
-- git rm *filename*:exclamation:: remove a file from the project
+- git add :exclamation:*filename or param*: stage the files (it's possible to add a specific filename or add all by using the param: *.* or *--all* or *-A*)
+- git rm :exclamation:*filename*: remove a file from the project
 - git commit -m "message": creates a local snapshot of the staged files
 - git commit -am "message": stage and creates a snapshot, if you already made the first commit of the file
-- git remote add origin *LinkToRemoteRepository*:exclamation:: link the local repository to the remote one
+- git remote add origin :exclamation:*LinkToRemoteRepository*: link the local repository to the remote one
 - git push -u origin main: in the very first push, is necessary to track to where changes goes and from where it comes
-- git push origin *branchname* :exclamation:: pushes the commits to remote repository
+- git push origin :exclamation:*branchname*: pushes the commits to remote repository
 - git pull: pull changes from the remote repository
-- git log: see the timeline changes in the project. it has some params, like: --decorate(give back some informations about branches), --author="name"(give back the log filtering by author), --oneline(show the commits by one line, a minimalist and simple view of log), --all(show all the branches), --graph(show the graphs with diferences between branches, merges, rebases), --pretty=oneline, --since='month day year'(commits after the date, excluding the day you set), --until='month day year'(commits before the date, excluding the day you set)
-- git shortlog *param*:question:: a simplified log, return the authors, its commits quantity and names. It's even possible to simpifly more and show only the quantity of commits by author adding the param: *-sn*
+- git log :question:*param*: see a timeline of the commits. **Params**: *--decorate*, give back info about the branch | *--author="name"*, filter the log by author | *--oneline*, show only a part of commit hash and its name | *--all*, show the log including all existing branches | *--graph*, show a graph with a tree of merges and rebases | *--pretty=oneline*, show the complete commit hash and its name | *--since='month day year'*, return commits after the date excluding the set day | *--until='month day year'*, return commits before the date excluding the set day
+- git shortlog :question:*param*: a simplified log that return the authors, its commits quantity and names. **Params**: *-sn*, simplify even more and return only the commits quantity and author username
 - git reflog: return a log with commits references
 ---
-- git clone *LinkToRemoteRepositorySSH*:exclamation:: creates a clone of an existing repository
+- git clone :exclamation:*LinkToRemoteRepositorySSH*: creates a clone of an existing repository
