@@ -26,9 +26,13 @@
 - git branch branchname: creates a new branch
 - :question:git checkout *param* branchname: change between branches. **Params**: *-b* creates and checkout automatically to a new branch | *-* switches back to the previous branch | *-d* deletes the branch
 - git branch --set-upstream-to=origin/main branch: set the branch to pull the changes from main
+- git push origin :branchname : will delete the branch on remote repository
 - git merge branchname: the current branch will inherit all features from the branch passed in the command
 - :question:git stash *param*: save and hide the features uncommited of a branch. **Params**: *save "stashname"*, creates a named stash | *apply stash@{index}*, apply the features saved before in the current branch | *list*, return a list with all existing stashes | *clear*, deletes all stashes | *drop stash@{index}*, deletes a stash | *pop*, removes the first stash in the list and applys in the current branch | *branch branchname*, creates a new branch and applys the features of first stash in the list | *show -p stashid*, show the features of the stash before applying
-- :question:git tag *param*: returns a list of all existing tags. **Params**: *show tagversion*, returns all commits and features of the specified tag | *-d tagversion*, deletes a local tag
+- :question:git tag *param*: returns a list of all existing tags. **Params**: *-d tagversion*, deletes a local tag
+- git show tagversion: returns all commits and features of the specified tag
 - git tag -a version -m "message": create a tag from the current state of the local repository
-- git checkout tagversion: change between tags 
+- git checkout tagversion: change between tags
+- git push origin *param*: **Params**: *tagname*, push the specified tag to remote repository | *--tags*, push all tags to remote repository
+- git push origin :tagversion :branchname : will delete the tag remote repository
 ---
