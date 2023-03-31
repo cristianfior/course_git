@@ -34,5 +34,5 @@
 - git tag -a version -m "message": create a tag from the current state of the local repository
 - git checkout tagversion: change between tags
 - git push origin *param*: **Params**: *tagname*, push the specified tag to remote repository | *--tags*, push all tags to remote repository
-- git push origin :tagversion :branchname : will delete the tag remote repository
+- git push origin :tagversion : will delete the tag remote repository
 ---
