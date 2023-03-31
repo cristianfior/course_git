@@ -16,23 +16,31 @@
 - git commit -m "message": creates a local snapshot of the staged files
 - git commit -am "message": stage and creates a snapshot, if you already made the first commit of the file
 - git remote add origin *LinkToRemoteRepository*: link the local repository to the remote one
+- git remote -v: return what is the remote repository name and link
+- git remote rm origin: removes the remote repository from local
 - git push -u origin main: in the very first push, is necessary to track to where changes goes and from where it comes
 - git push origin *branchname*: pushes the commits to remote repository
 - git pull: pull changes from the remote repository
+- git fetch -a: pull existing branches in remote repository
+- git diff *param*: show differences between HEAD and the current branch before the commit. **Params**: *--name-only*, will return only the name of the modified files | *branchname*, show diff between HEAD and the specified branch | *HEAD:filename filename*, show the diffs between files in remote repo and local repo
 - :question:git log *param*: see a timeline of the commits. **Params**: *--decorate*, give back info about the branch | *--author="name"*, filter the log by author | *--oneline*, show only a part of commit hash and its name | *--all*, show the log including all existing branches | *--graph*, show a graph with a tree of merges and rebases | *--pretty=oneline*, show the complete commit hash and its name | *--since='month day year'*, return commits after the date excluding the set day | *--until='month day year'*, return commits before the date excluding the set day
 - :question:git shortlog *param*: a simplified log that return the authors, its commits quantity and names. **Params**: *-sn*, simplify even more and return only the commits quantity and author username
+- :question:git show *param*: show the diffs of the last commit. **Params**: *branch-hash*, returns diffs of a branch | *tag-version*, returns diffs of a tag
 - git reflog: return a log with commits references
 - git branch: list all existing local branches
-- git branch branchname: creates a new branch
+- git branch *branchname*: creates a new branch
 - :question:git checkout *param* branchname: change between branches. **Params**: *-b* creates and checkout automatically to a new branch | *-* switches back to the previous branch | *-d* deletes the branch
 - git branch --set-upstream-to=origin/main branch: set the branch to pull the changes from main
-- git push origin :branchname : will delete the branch on remote repository
-- git merge branchname: the current branch will inherit all features from the branch passed in the command
+- git push origin *:branchname* : will delete the branch on remote repository
+- git merge *branchname*: the current branch will inherit all features from the branch passed in the command
 - :question:git stash *param*: save and hide the features uncommited of a branch. **Params**: *save "stashname"*, creates a named stash | *apply stash@{index}*, apply the features saved before in the current branch | *list*, return a list with all existing stashes | *clear*, deletes all stashes | *drop stash@{index}*, deletes a stash | *pop*, removes the first stash in the list and applys in the current branch | *branch branchname*, creates a new branch and applys the features of first stash in the list | *show -p stashid*, show the features of the stash before applying
 - :question:git tag *param*: returns a list of all existing tags. **Params**: *-d tagversion*, deletes a local tag
-- git show tagversion: returns all commits and features of the specified tag
-- git tag -a version -m "message": create a tag from the current state of the local repository
-- git checkout tagversion: change between tags
+- git show *tagversion*: returns all commits and features of the specified tag
+- git tag -a *version* -m "message": create a tag from the current state of the local repository
+- git checkout *tagversion*: change between tags
 - git push origin *param*: **Params**: *tagname*, push the specified tag to remote repository | *--tags*, push all tags to remote repository
-- git push origin :tagversion : will delete the tag remote repository
+- git push origin *:tagversion* : will delete the tag in the remote repository
+- git submodule: return existing submodules. A submodule is a way to bring other projects inside yours
+- git submodule add *LinkToRemoteRepositorySSH* *submodulename*: add submodule to local repository
+- git push --recurse-submodules=on-demand
 ---
