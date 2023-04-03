@@ -141,8 +141,8 @@
 ---
 - git stash *param*:question:: save and hide the features uncommited of a branch.
 
-| PARAMS              | DESCRIPTION   |
-| ------------------- | ------------- --------------------------------------------------------- |
+| PARAMS              | DESCRIPTION                                                             |
+| ------------------- | ----------------------------------------------------------------------- |
 | list                | return a list with all existing stashes                                 |
 | save "stashname"    | creates a named stash                                                   |
 | apply stash@{index} | apply the features saved before in the current branch                   |
@@ -153,6 +153,7 @@
 | pop                 | removes the first stash in the list and applys in the current branch    |
 | branch branchname   | creates a new branch and applys the features of first stash in the list |
 | show -p stashid     | show the features of the stash before applying                          |
+
 ---
 - git tag *param*:question:: returns a list of all existing tags.
 
