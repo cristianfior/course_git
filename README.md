@@ -21,6 +21,7 @@
 - git clean: removes all unstaged files
 ---
 - git add *param*: stage the files.
+
 | PARAMS        | DESCRIPTION                   |
 | ------------- | ----------------------------- |
 | filename      | stage only the specified file |
