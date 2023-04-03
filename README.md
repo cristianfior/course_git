@@ -38,12 +38,14 @@
 - git reset HEAD *filename*: unstage a file
 ---
 - git commit -m "message" *param*: creates a local snapshot of the staged files.
+
 | PARAMS                            | DESCRIPTION                                       |
 | ----------------------------------| ------------------------------------------------- |
 | --author="username <'useremail'>" | set collaborator username and email of the commit |
 | - Closes #issuenumber             | closes automatically the specified issue          |
 ---
 - git commit -am "message" *param*: stage and creates a snapshot, if you already made the first commit of the file.
+
 | PARAMS                            | DESCRIPTION                                       |
 | ----------------------------------| ------------------------------------------------- |
 | --author="username <'useremail'>" | set collaborator username and email of the commit |
@@ -66,6 +68,7 @@
 - git fetch -a: pull existing branches in remote repository
 ---
 - git diff *param*: show differences between HEAD and the current branch before the commit.
+
 | PARAMS                 | DESCRIPTION                                                |
 | ---------------------- | ---------------------------------------------------------- |
 | --name-only            | return only the name of the modified files                 |
@@ -74,6 +77,7 @@
 | filename1 filename2    | show the diffs between the files                           |
 ---
 - git log *param*:question:: see a timeline of the commits.
+
 | PARAMS                   | DESCRIPTION                                           |
 | ------------------------ | ----------------------------------------------------- |
 | --decorate               | give back info about the commits                      |
@@ -85,12 +89,14 @@
 | --since='month day year' | return commits after the date, excluding the set day  |
 | --until='month day year' | return commits before the date, excluding the set day |
 ---
-- git shortlog *param*:question:: a simplified log that return the authors, its commits quantity and names. 
+- git shortlog *param*:question:: a simplified log that return the authors, its commits quantity and names.
+
 | PARAMS        | DESCRIPTION                                                                 |
 | ------------- | --------------------------------------------------------------------------- |
 | -sn           | simplify even more and return only the commits quantity and author username |
 ---
 - git show *param*:question:: show the diffs of the last commit. **Params**: *branch-hash*,  | *tag-version*, 
+
 | PARAMS        | DESCRIPTION               |
 | ------------- | ------------------------- |
 | branch-hash   | returns diffs of a branch |
@@ -99,6 +105,7 @@
 - git reflog: map all commands and changes did in the repository
 ---
 - git reset *param* *commithash*: reset the branch to a specific commit.
+
 | PARAMS         | DESCRIPTION                                                  |
 | -------------- | ------------------------------------------------------------ |
 | --soft         | undo the commit leaving the changes staged                   |
@@ -110,11 +117,13 @@
 - git *branch*: list all existing local branches
 ---
 - git *branch* *param*:question: *branchname*: creates a new branch.
+
 | PARAMS        | DESCRIPTION        |
 | ------------- | ------------------ |
 | -d            | deletes the branch |
 ---
 - git checkout *param*:question: branchname: change between branches.
+
 | PARAMS        | DESCRIPTION                                        |
 | ------------- | -------------------------------------------------- |
 | -b            | creates and checkout automatically to a new branch |
@@ -131,6 +140,7 @@
 - git cherry-pick *commit-hash*: pull the changes of a commit to the current branch without needing merge or rebase
 ---
 - git stash *param*:question:: save and hide the features uncommited of a branch.
+
 | PARAMS              | DESCRIPTION   |
 | ------------------- | ------------- --------------------------------------------------------- |
 | list                | return a list with all existing stashes                                 |
@@ -145,6 +155,7 @@
 | show -p stashid     | show the features of the stash before applying                          |
 ---
 - git tag *param*:question:: returns a list of all existing tags.
+
 | PARAMS        | DESCRIPTION         |
 | ------------- | ------------------- |
 | -d tagversion | deletes a local tag |
@@ -156,6 +167,7 @@
 - git checkout *tagversion*: change between tags
 ---
 - git push origin *param*: push changes to remote repository
+
 | PARAMS        | DESCRIPTION                                               |
 | ------------- | --------------------------------------------------------- |
 | branchname    | push changes to the specified branch on remote repository |
@@ -177,6 +189,7 @@
 - git archive *branch* --format=zip --output=zipname.zip: create a compressed archive of a specific branch
 ---
 - git bisect *param*: the debugger of git.
+
 | PARAMS           | DESCRIPTION                                          |
 | ---------------- | ---------------------------------------------------- |
 | start            | starts the debugger                                  |
