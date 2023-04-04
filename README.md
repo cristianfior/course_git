@@ -37,14 +37,14 @@
 ---
 - git reset HEAD *filename*: unstage a file
 ---
-- git commit -m "message" *param*: creates a local snapshot of the staged files.
+- git commit -m "message" *param*:question:: creates a local snapshot of the staged files.
 
 | PARAMS                            | DESCRIPTION                                       |
 | ----------------------------------| ------------------------------------------------- |
 | --author="username <'useremail'>" | set collaborator username and email of the commit |
 | - Closes #issuenumber             | closes automatically the specified issue          |
 ---
-- git commit -am "message" *param*: stage and creates a snapshot, if you already made the first commit of the file.
+- git commit -am "message" *param*:question:: stage and creates a snapshot, if you already made the first commit of the file.
 
 | PARAMS                            | DESCRIPTION                                       |
 | ----------------------------------| ------------------------------------------------- |
