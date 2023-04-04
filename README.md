@@ -1,4 +1,4 @@
-## README please!
+## THE Cheatsheet!
 - git init: initialize the git repository on the specified archive
 ---
 - git clone *LinkToRemoteRepositorySSH*: creates a clone of an existing repository
