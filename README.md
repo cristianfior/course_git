@@ -22,10 +22,10 @@
 ---
 - git add *param*: stage the files.
 
-| PARAMS        | DESCRIPTION                   |
-| ------------- | ----------------------------- |
-| filename      | stage only the specified file |
-|., --all, -A   | stage all modified files      |
+| PARAMS      | DESCRIPTION                   |
+| ----------- | ----------------------------- |
+| filename    | stage only the specified file |
+|., --all, -A | stage all modified files      |
 ---
 - git mv *path/oldfilename* *path/newfilename*: renames a file
 ---
@@ -91,26 +91,26 @@
 ---
 - git shortlog *param*:question:: a simplified log that return the authors, its commits quantity and names.
 
-| PARAMS        | DESCRIPTION                                                                 |
-| ------------- | --------------------------------------------------------------------------- |
-| -sn           | simplify even more and return only the commits quantity and author username |
+| PARAMS | DESCRIPTION                                                                 |
+| ------ | --------------------------------------------------------------------------- |
+| -sn    | simplify even more and return only the commits quantity and author username |
 ---
 - git show *param*:question:: show the diffs of the last commit. **Params**: *branch-hash*,  | *tag-version*, 
 
-| PARAMS        | DESCRIPTION               |
-| ------------- | ------------------------- |
-| branch-hash   | returns diffs of a branch |
-| tag-version   | returns diffs of a tag    |
+| PARAMS      | DESCRIPTION               |
+| ----------- | ------------------------- |
+| branch-hash | returns diffs of a branch |
+| tag-version | returns diffs of a tag    |
 ---
 - git reflog: map all commands and changes did in the repository
 ---
 - git reset *param* *commithash*: reset the branch to a specific commit.
 
-| PARAMS         | DESCRIPTION                                                  |
-| -------------- | ------------------------------------------------------------ |
-| --soft         | undo the commit leaving the changes staged                   |
-| --mixed        | undo the commit and the staging leaving the changes modified |
-| --hard         | undo all changes                                             |
+| PARAMS  | DESCRIPTION                                                  |
+| ------- | ------------------------------------------------------------ |
+| --soft  | undo the commit leaving the changes staged                   |
+| --mixed | undo the commit and the staging leaving the changes modified |
+| --hard  | undo all changes                                             |
 ---
 - git revert *commit-hash*: reverts the commit you appointed to git.
 ---
@@ -118,16 +118,16 @@
 ---
 - git *branch* *param*:question: *branchname*: creates a new branch.
 
-| PARAMS        | DESCRIPTION        |
-| ------------- | ------------------ |
-| -d            | deletes the branch |
+| PARAMS | DESCRIPTION        |
+| ------ | ------------------ |
+| -d     | deletes the branch |
 ---
 - git checkout *param*:question: branchname: change between branches.
 
-| PARAMS        | DESCRIPTION                                        |
-| ------------- | -------------------------------------------------- |
-| -b            | creates and checkout automatically to a new branch |
-| -             | switches back to the previous branch               |
+| PARAMS | DESCRIPTION                                        |
+| ------ | -------------------------------------------------- |
+| -b     | creates and checkout automatically to a new branch |
+| -      | switches back to the previous branch               |
 ---
 - git branch --set-upstream-to=origin/main branch: set the branch to pull the changes from main
 ---
@@ -169,11 +169,11 @@
 ---
 - git push origin *param*: push changes to remote repository
 
-| PARAMS        | DESCRIPTION                                               |
-| ------------- | --------------------------------------------------------- |
-| branchname    | push changes to the specified branch on remote repository |
-| tagname       | push the specified tag to remote repository               |
-| --tags        | push all tags to remote repository                        |
+| PARAMS     | DESCRIPTION                                               |
+| ---------- | --------------------------------------------------------- |
+| branchname | push changes to the specified branch on remote repository |
+| tagname    | push the specified tag to remote repository               |
+| --tags     | push all tags to remote repository                        |
 ---
 - git push origin *:tagversion* : will delete the tag in the remote repository
 ---
