@@ -53,7 +53,7 @@
 ---
 - git commit --amend: edit the last commit message before the push
 ---
-- git remote add origin *LinkToRemoteRepository*: link the local repository to the remote one
+- git remote add *remote-name* *LinkToRemoteRepository*: link the local repository to the remote one
 ---
 - git remote -v: return what is the remote repository name and link
 ---
