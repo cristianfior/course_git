@@ -3,7 +3,7 @@
 ---
 - git clone *LinkToRemoteRepositorySSH*: creates a clone of an existing repository
 ---
-- git config --local help.autocorrect 1: authorize git to correct commands when it is misswrited
+- git config --local help.autocorrect 1: authorize git to correct commands when it's misswrited
 ---
 - git config --local user.name "username": define collaborator username
 - git config --local user.email "useremail": define collaborator useremail
